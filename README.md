@@ -28,18 +28,21 @@ python app.py
 一键部署 - 简单易用的安装和运行流程
 
 ## 🚀 技术栈
-技术	用途	模型/库
-对话生成	生成自然语言回复	DialoGPT-small (Hugging Face)
-情感分析	检测用户情绪	DistilBERT情感模型
-语音合成	文本转语音	Coqui TTS
-情感语音	动态语音参数调整	自定义情感映射算法
-项目框架	应用开发	Python 3.8+
+```text
+技术	    用途	              模型/库
+对话生成	生成自然语言回复	   DialoGPT-small (Hugging Face)
+情感分析	检测用户情绪	       DistilBERT情感模型
+语音合成	文本转语音	           Coqui TTS
+情感语音	动态语音参数调整	   自定义情感映射算法
+项目框架	应用开发	           Python 3.8+
+```
 ## ⚙️ 快速开始
 安装步骤
 ```bash
 # 克隆仓库
 git clone https://github.com/your-username/EmoVoiceChatbot.git
 cd EmoVoiceChatbot
+
 # 创建虚拟环境（推荐）
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
@@ -47,11 +50,13 @@ venv\Scripts\activate    # Windows
 
 # 安装依赖
 pip install -r requirements.txt
+```
 运行程序
-bash
+```bash
 python app.py
+```
 使用示例
-text
+```text
 You: 我刚刚通过了面试，太开心了！
 Detected emotion: joy
 Bot: 恭喜你！这是值得庆祝的好消息！
@@ -92,7 +97,7 @@ CPU/GPU双模式支持
 详细的日志输出
 
 📁 项目结构
-text
+```text
 EmoVoiceChatbot/
 ├── app.py                  # 主应用程序
 ├── requirements.txt        # 依赖列表
@@ -101,7 +106,7 @@ EmoVoiceChatbot/
 └── utils/                  # 工具函数
     ├── emotion_utils.py    # 情感处理工具
     └── tts_utils.py        # 语音合成工具
-
+```
 ## 远程API部署
 ```python
 # 添加Flask API接口
@@ -116,3 +121,10 @@ def chat_api():
     response = generate_response(user_input)
     audio_file = text_to_speech(response, emotion)
     return send_file(audio_file)
+```
+
+## 📜 许可证
+本项目采用 MIT License
+
+
+让机器不仅理解你的文字，更能感受你的情感 - EmoVoice Chatbot 带你进入人机交互的新维度！
