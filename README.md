@@ -27,12 +27,12 @@ python app.py
 
 ## 🚀 技术栈
 ```text
-技术	        用途	        模型/库
-对话生成	生成自然语言回复	DialoGPT-small (Hugging Face)
-情感分析	检测用户情绪	DistilBERT情感模型
-语音合成	文本转语音	Coqui TTS
-情感语音	动态语音参数调整	自定义情感映射算法
-项目框架	应用开发	Python 3.8+
+技术	        用途	            模型/库
+对话生成	生成自然语言回复	    DialoGPT-small (Hugging Face)
+情感分析	检测用户情绪	    DistilBERT情感模型
+语音合成	文本转语音	    Coqui TTS
+情感语音	动态语音参数调整	    自定义情感映射算法
+项目框架	应用开发	    Python 3.8+
 ```
 
 ## ⚙️ 快速开始
