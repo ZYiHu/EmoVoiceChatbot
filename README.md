@@ -27,7 +27,7 @@ python app.py
 
 ## 🚀 技术栈
 ```text
-技术	        用途	模型/库
+技术	        用途	    模型/库
 对话生成	生成自然语言回复	DialoGPT-small (Hugging Face)
 情感分析	检测用户情绪	DistilBERT情感模型
 语音合成	文本转语音	Coqui TTS
