@@ -4,6 +4,11 @@ import torch
 from TTS.utils.synthesizer import Synthesizer
 from TTS.utils.manage import ModelManager
 
+# 初始化模型
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-small")
+tts_engine = init_tts()
+
 # 初始化情感分析模型
 emotion_classifier = pipeline(
     "text-classification", 
